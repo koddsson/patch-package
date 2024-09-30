@@ -7,6 +7,6 @@
   "license": "ISC",
   "dependencies": {
     "naughty-package": "file:./naughty-package",
-    "replace": "^1.1.1"
+    "replace": "^1.2.2"
   }
 }
