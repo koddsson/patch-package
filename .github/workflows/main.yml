@@ -19,4 +19,6 @@ jobs:
         with:
           node-version: ${{ matrix.node }}
       - run: yarn install
+      - run: git config --global user.email "hi@koddsson.com"
+      - run: git config --global user.name "Kristján Oddsson"
       - run: yarn run test
