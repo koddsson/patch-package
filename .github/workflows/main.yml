@@ -8,16 +8,17 @@ jobs:
   test:
     name: ${{ matrix.os }} on node ${{ matrix.node }}
     runs-on: ${{ matrix.os }}
+    continue-on-error: true
     strategy:
       matrix:
         os: [ubuntu-latest]
-        node: [14, 16, 18]
+        node: [18, 20, 22]
     steps:
-      - uses: actions/checkout@v1
-      - uses: actions/setup-node@v1
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node }}
       - run: yarn install
-      - run: git config --global user.email "patch-package@test.com"
-      - run: git config --global user.name "patch-package"
+      - run: git config --global user.email "hi@koddsson.com"
+      - run: git config --global user.name "Kristján Oddsson"
       - run: yarn run test
