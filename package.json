@@ -1,9 +1,9 @@
 {
-  "name": "patch-package",
+  "name": "@koddsson/patch-package",
   "version": "8.0.0",
   "description": "Fix broken node modules with no fuss",
   "main": "dist/index.js",
-  "repository": "github:ds300/patch-package",
+  "repository": "github:koddsson/patch-package",
   "author": "David Sheldrick",
   "license": "MIT",
   "engines": {
