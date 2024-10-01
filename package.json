@@ -20,12 +20,6 @@
     "prepack": "rimraf dist/**/*.test.js",
     "test": "./run-tests.sh --runInBand"
   },
-  "lint-staged": {
-    "*.ts": [
-      "tslint -c tslint.json -p tsconfig.json",
-      "prettier --no-semi --trailing-comma=all --list-different"
-    ]
-  },
   "jest": {
     "globals": {
       "ts-jest": {
@@ -54,7 +48,6 @@
     "@types/semver": "^7.5.0",
     "@types/tmp": "^0.2.6",
     "jest": "^27",
-    "lint-staged": "^8.1.5",
     "prettier": "^3.3.3",
     "randomstring": "^1.1.5",
     "ts-jest": "^27",
